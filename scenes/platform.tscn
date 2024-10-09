@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://de7bjleud03os"]
+
+[ext_resource type="Texture2D" uid="uid://df5xwkog1vjpu" path="res://assets/FreeCuteTileset/ExampleTiles.png" id="1_wkqma"]
+
+[node name="Platform" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_wkqma")
+region_enabled = true
+region_rect = Rect2(14.6125, 15.6693, 81.1723, 81.1163)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, -40, -23, -40, -23, -25, -39, -25, -39, 5, -16, 34, 0, 39, 16, 35, 25, 23, 36, 14, 41, 4, 41, -25, 25, -25, 25, -40)
+one_way_collision = true
